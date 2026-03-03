@@ -438,7 +438,7 @@ def write_baseline_manifest():
     canonical = json.dumps(manifest, sort_keys=True, separators=(",", ":"), ensure_ascii=True).encode("utf-8")
     manifest["manifestSha256"] = sha256_bytes(canonical)
 
-    manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=True) + "\\n", encoding="utf-8", newline="\\n")
+    manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=True) + "\\n", encoding="utf-8", newline="\n")
 
 def main():
     ap = argparse.ArgumentParser()
@@ -549,7 +549,7 @@ def main():
     # Make a small canon change
     p = ws / "canon/profile.md"
     if p.exists():
-        p.write_text(p.read_text(encoding="utf-8") + "\\nCI_SMOKE_CHANGE\\n", encoding="utf-8", newline="\\n")
+        p.write_text(p.read_text(encoding="utf-8") + "\\nCI_SMOKE_CHANGE\\n", encoding="utf-8", newline="\n")
 
     code, out = run([sys.executable, "ops/make_pack.py"], cwd=ws)
     if code != 0:
