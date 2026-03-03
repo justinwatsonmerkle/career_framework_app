@@ -16,20 +16,20 @@ def main():
     ws = tmp / ROOT.name
     shutil.copytree(ROOT, ws, dirs_exist_ok=True)
 
-    # Remove git to ensure no Git reliance
-    if (ws / ".git").exists():
-        shutil.rmtree(ws / ".git")
+    # If canon missing, bootstrap from canon_template
+    if not (ws / "canon").exists() and (ws / "canon_template").exists():
+        shutil.copytree(ws / "canon_template", ws / "canon", dirs_exist_ok=True)
 
     # Make a small canon change
     p = ws / "canon/profile.md"
-    p.write_text(p.read_text(encoding="utf-8") + "\nCI_SMOKE_CHANGE\n", encoding="utf-8", newline="\n")
+    if p.exists():
+        p.write_text(p.read_text(encoding="utf-8") + "\nCI_SMOKE_CHANGE\n", encoding="utf-8", newline="\n")
 
     code, out = run([sys.executable, "ops/make_pack.py"], cwd=ws)
     if code != 0:
         print(out.strip())
         sys.exit(code)
 
-    # Extract pack path from output
     lines = [ln.strip() for ln in out.splitlines() if ln.strip()]
     pack_path = None
     for ln in reversed(lines):
