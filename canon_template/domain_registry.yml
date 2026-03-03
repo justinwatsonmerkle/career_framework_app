@@ -1,0 +1,3 @@
+# User override domain registry.
+# If you do not need overrides, you can delete this file and rely on core defaults.
+domains: {}

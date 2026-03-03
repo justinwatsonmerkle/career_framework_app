@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "1",
+  "frameworkVersion": "0.1.1",
+  "baseChangeId": "CHG-0000",
+  "publishedChangeId": "CHG-0000",
+  "createdAt": "2026-03-02T12:35:03Z",
+  "packFiles": [],
+  "deleted": [],
+  "files": [
+    {
+      "path": "canon/assumptions.md",
+      "sha256": "bc7a43cc028b6311dbfb9e8466788ddfa1c328742944279bac5edf7aa7c976be",
+      "bytes": 217
+    },
+    {
+      "path": "canon/backlog.md",
+      "sha256": "ea636fc94eb28ceccfaafc6ce22c782e19235a5f44377542388ee5255083550f",
+      "bytes": 253
+    },
+    {
+      "path": "canon/backlog_unclassified.md",
+      "sha256": "6f276b97464cef3098335837548dda2720a2f2f7661a609bf322b9e9f693972c",
+      "bytes": 357
+    },
+    {
+      "path": "canon/decision_queue.md",
+      "sha256": "4137b0a6bcaa963591844c7bd2d2f8661ed1834b1be2f88f5d368cb4519e7751",
+      "bytes": 348
+    },
+    {
+      "path": "canon/decisions.md",
+      "sha256": "f0470789fc10c9f6d9d1d2ab69ff9bc7d13e75a1012cdb3fd2c69b39b823e536",
+      "bytes": 146
+    },
+    {
+      "path": "canon/domain_registry.yml",
+      "sha256": "d9172d649b11a177a789edecd5c404bc194fecebf995daf7a0302f7617a5b6fb",
+      "bytes": 129
+    },
+    {
+      "path": "canon/events_log.md",
+      "sha256": "52a713762a674974467ef04fd5268095f1e0f9a171bc09b5a1bba1a57cd16393",
+      "bytes": 231
+    },
+    {
+      "path": "canon/evidence_register.md",
+      "sha256": "7b3e153ccc38c1eb4f23cac1361754734392315b560065f7c10ec4b2906bb8a7",
+      "bytes": 153
+    },
+    {
+      "path": "canon/goals.md",
+      "sha256": "2f0611d2ecf5c32a8dfeb23e9f4ecce6ff0ff441e4852633a9fa0cb280673593",
+      "bytes": 127
+    },
+    {
+      "path": "canon/logs/rolling_log.md",
+      "sha256": "b3d0d1c618ba6241c75dd666721bfa1f2f4e5a6ed6bf94a48fd29110723bcea7",
+      "bytes": 37
+    },
+    {
+      "path": "canon/logs/sessions/.keep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "canon/meta.yml",
+      "sha256": "e5c85dbd11bdb28d330038408a39909fb21c21aad4e771492e55acffb49326ac",
+      "bytes": 147
+    },
+    {
+      "path": "canon/plans.md",
+      "sha256": "86a12de216bc8b8dd31fd0f21fc930da34a16305795c950fd6ee0a7e9dac6474",
+      "bytes": 167
+    },
+    {
+      "path": "canon/preferences.md",
+      "sha256": "85c73d67ab506b42df0387280d0a4c658298abb919916e51a45f498086b075b9",
+      "bytes": 126
+    },
+    {
+      "path": "canon/profile.md",
+      "sha256": "f8a9336135b7ce84c2fc182a5eebc52681e1e3506b4d091d7dbc03ad2a3ddedb",
+      "bytes": 122
+    },
+    {
+      "path": "canon/settings.yml",
+      "sha256": "e82bfcd864e4e1995118dbb17b02836db33ebbf7526d56be077e9ef03d9ba10d",
+      "bytes": 352
+    }
+  ],
+  "manifestSha256": "74b415b90f5b02c046825633a1328c34513cad393f23a4dd60842e93692141ab"
+}

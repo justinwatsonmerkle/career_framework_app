@@ -1,0 +1,58 @@
+# Domain registry default (framework-provided)
+# Users may override by creating canon/domain_registry.yml
+domains:
+  profile:
+    purpose: "User background and stable facts"
+    cardinality: "singleton"
+    replacementLikelihood: "medium"
+    safeDefault: "refine_non_destructive"
+  job_role:
+    purpose: "Current role and employment context"
+    cardinality: "singleton"
+    replacementLikelihood: "high"
+    safeDefault: "stage_replace_candidate"
+  responsibilities:
+    purpose: "Responsibilities and scope"
+    cardinality: "set"
+    replacementLikelihood: "medium"
+    safeDefault: "add_only"
+  goals:
+    purpose: "Goals and outcomes"
+    cardinality: "set_active_subset"
+    replacementLikelihood: "medium"
+    safeDefault: "add_or_refine"
+  plans:
+    purpose: "Milestones and plans"
+    cardinality: "ordered_set"
+    replacementLikelihood: "high"
+    safeDefault: "stage_change_confirm"
+  preferences:
+    purpose: "Preferences and working style"
+    cardinality: "weighted_set"
+    replacementLikelihood: "low_medium"
+    safeDefault: "update_weight_keep_history"
+  evidence:
+    purpose: "Evidence and proof points"
+    cardinality: "set"
+    replacementLikelihood: "low"
+    safeDefault: "add_only"
+  assumptions:
+    purpose: "Unconfirmed statements and ambiguities"
+    cardinality: "set"
+    replacementLikelihood: "low"
+    safeDefault: "add_only"
+  backlog:
+    purpose: "Actions, questions, follow-ups (with routing metadata)"
+    cardinality: "set"
+    replacementLikelihood: "low"
+    safeDefault: "add_only"
+  decisions:
+    purpose: "Logged decisions and rationale"
+    cardinality: "set"
+    replacementLikelihood: "low"
+    safeDefault: "add_only"
+  events_log:
+    purpose: "Append-only event capture for audit"
+    cardinality: "append_only"
+    replacementLikelihood: "none"
+    safeDefault: "append_only"

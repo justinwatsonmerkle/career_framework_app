@@ -1,0 +1,17 @@
+# User settings (overrides framework defaults)
+# Delete keys you do not want to override.
+
+ambiguity:
+  interruptionPolicy: "hybrid"
+  decisionQueueAtPublish: true
+
+logging:
+  rollingWindowDays: 60
+  includeSessionLogInPacks: true
+
+privacy:
+  defaultSharePolicy: "private_canon"
+
+behaviour:
+  breadthFirstDiscovery: true
+  decisivenessBias: "balanced"

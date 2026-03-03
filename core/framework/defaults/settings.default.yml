@@ -1,0 +1,12 @@
+# Default settings (framework-provided). User overrides live in canon/settings.yml.
+ambiguity:
+  interruptionPolicy: "hybrid"   # hybrid | interruptAlways | neverInterrupt
+  decisionQueueAtPublish: true
+logging:
+  rollingWindowDays: 60
+  includeSessionLogInPacks: true
+privacy:
+  defaultSharePolicy: "private_canon"   # private_canon | share_all
+behaviour:
+  breadthFirstDiscovery: true
+  decisivenessBias: "balanced"          # exploratory | balanced | decisive
