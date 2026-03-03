@@ -150,7 +150,10 @@ def main() -> None:
 
     safe_created = created_at.replace(":", "").replace("-", "")
     pack_name = f"canon_pack_{published_change_id}_{safe_created}.zip"
-    out_path = ROOT / pack_name
+    PACKS_DIR = ROOT / "packs" / "outgoing"
+        PACKS_DIR.mkdir(parents=True, exist_ok=True)
+
+        out_path = PACKS_DIR / pack_name
 
     with zipfile.ZipFile(out_path, "w") as z:
         for path in pack_files:
