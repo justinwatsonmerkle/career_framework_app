@@ -3,3 +3,10 @@
 # Generated outputs
 packs/
 *.zip
+
+# Local outputs
+packs/
+*.zip
+__pycache__/
+*.pyc
+
